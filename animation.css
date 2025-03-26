@@ -1,0 +1,239 @@
+#screen {
+  width: 100%;
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+#game {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#game_background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("img/baggrund.svg");
+  background-size: cover;
+}
+
+#game_foreground {
+  width: 100%;
+  height: 100%;
+  top: 82%;
+  position: absolute;
+  z-index: 60;
+}
+
+#game_elements {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+#flaske_container {
+  position: absolute;
+  height: 8%;
+  aspect-ratio: 4/5;
+  z-index: 50;
+}
+#flaske_container2 {
+  position: absolute;
+  height: 8%;
+  aspect-ratio: 4/5;
+  z-index: 50;
+}
+#flaske_container3 {
+  position: absolute;
+  height: 8%;
+  aspect-ratio: 4/5;
+  z-index: 50;
+}
+
+#fisk_container {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 4/5;
+  z-index: 50;
+}
+#fisk_container2 {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 4/5;
+  z-index: 50;
+}
+#fisk_container3 {
+  position: absolute;
+  width: 10%;
+  aspect-ratio: 4/5;
+  z-index: 50;
+}
+.fald {
+  animation-name: falling_kf;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes falling_kf {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(1200px);
+  }
+}
+
+.frys {
+  animation-play-state: paused;
+}
+
+.drej {
+  animation-name: drej_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes drej_kf {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+.zoom {
+  animation-name: zoom_kf;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes zoom_kf {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: 1.2;
+  }
+
+  100% {
+    transform: scale(0);
+  }
+}
+
+#game_ui {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#score_board {
+  width: 7%;
+  position: absolute;
+  top: 14%;
+  right: 0.75%;
+  aspect-ratio: 1/8;
+  background-size: cover;
+}
+
+#life_board {
+  height: 29%;
+  aspect-ratio: 1/3;
+  position: absolute;
+  top: 3%;
+  right: 17px;
+  background-size: cover;
+}
+
+#time_board {
+  aspect-ratio: 1/1.6;
+  position: absolute;
+  top: 3%;
+  left: 3%;
+  background-size: cover;
+  width: 15%;
+  height: 5%;
+  aspect-ratio: 10/1;
+  border: 2px solid rgb(8, 50, 105);
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#time_sprite {
+  width: 100%;
+  height: 100%;
+  transform-origin: left;
+  border-radius: 10px;
+}
+
+.tid {
+  animation-name: tid_kf;
+  animation-duration: 25s;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+}
+
+@keyframes tid_kf {
+  from {
+    background-color: cornflowerblue;
+  }
+
+  to {
+    background-color: rgb(202, 234, 255);
+    transform: scaleX(0);
+  }
+}
+
+.pos1 {
+  left: 20%;
+  top: -20%;
+}
+
+.pos2 {
+  left: 40%;
+  top: -20%;
+}
+
+.pos3 {
+  left: 60%;
+  top: -20%;
+}
+
+.pos4 {
+  left: 80%;
+  top: -20%;
+}
+
+.delay1 {
+  animation-delay: 0s;
+}
+
+.delay2 {
+  animation-delay: 1s;
+}
+
+.delay3 {
+  animation-delay: 2s;
+}
+
+.delay4 {
+  animation-delay: 1.5s;
+}

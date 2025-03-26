@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 167.41 148.39">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #c1e4f8;
+      }
+
+      .cls-1, .cls-2 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: #81afc7;
+      }
+    </style>
+  </defs>
+  <g id="level_complete">
+    <rect class="cls-2" x="37.99" y="38.13" width="91.58" height="91.58" transform="translate(-34.8 84.1) rotate(-45.13)"/>
+    <ellipse class="cls-2" cx="48.7" cy="48.7" rx="45.98" ry="51.85" transform="translate(-20.17 48.67) rotate(-44.98)"/>
+    <ellipse class="cls-2" cx="118.73" cy="48.81" rx="51.85" ry="45.97" transform="translate(.48 98.78) rotate(-45.25)"/>
+    <path class="cls-1" d="m15.85,52.19c-1.35.03-4.15-8.73-2.23-17.85,1.79-8.5,6.95-13.71,8.36-15.06,6.38-6.1,13.61-7.45,16.16-7.81-3.88,3.19-8.66,7.9-12.82,14.5-2.06,3.27-3.35,6.03-3.9,7.25-5.01,11.14-4.31,18.93-5.57,18.96Z"/>
+  </g>
+  <g id="regler">
+    <rect class="cls-2" x="37.99" y="38.13" width="91.58" height="91.58" transform="translate(-34.8 84.1) rotate(-45.13)"/>
+    <ellipse class="cls-2" cx="48.7" cy="48.7" rx="45.98" ry="51.85" transform="translate(-20.17 48.67) rotate(-44.98)"/>
+    <ellipse class="cls-2" cx="118.73" cy="48.81" rx="51.85" ry="45.97" transform="translate(.48 98.78) rotate(-45.25)"/>
+    <path class="cls-1" d="m15.85,52.19c-1.35.03-4.15-8.73-2.23-17.85,1.79-8.5,6.95-13.71,8.36-15.06,6.38-6.1,13.61-7.45,16.16-7.81-3.88,3.19-8.66,7.9-12.82,14.5-2.06,3.27-3.35,6.03-3.9,7.25-5.01,11.14-4.31,18.93-5.57,18.96Z"/>
+  </g>
+</svg>

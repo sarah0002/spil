@@ -1,15 +1,118 @@
----
-import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
----
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
-</MainLayout>
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spil</title>
+		<link rel="stylesheet" href="general.css" />
+		<link rel="stylesheet" href="layout.css" />
+		<link rel="stylesheet" href="animation.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap"
+			rel="stylesheet"
+		/>
+	</head><body>
+		<main>
+			<div id="screen">
+				<div id="game">
+					<div id="game_background"></div>
+					<div id="game_elements">
+						<div id="fisk_container">
+							<div id="fisk_sprite">
+								<img src="img/Fisk_1.svg" alt="Fisk" />
+							</div>
+						</div>
+						<div id="fisk_container2">
+							<div id="fisk_sprite2">
+								<img src="img/Fisk_2.svg" alt="Fisk" />
+							</div>
+						</div>
+						<div id="fisk_container3">
+							<div id="fisk_sprite3">
+								<img src="img/Fisk_2.svg" alt="Fisk" />
+							</div>
+						</div>
+						<div id="flaske_container">
+							<div id="flaske_sprite">
+								<img
+									src="img/plastikflaske.svg"
+									alt="plastikflaske"
+								/>
+							</div>
+						</div>
+						<div id="flaske_container2">
+							<div id="flaske_sprite2">
+								<img
+									src="img/plastikflaske.svg"
+									alt="plastikflaske"
+								/>
+							</div>
+						</div>
+						<div id="flaske_container3">
+							<div id="flaske_sprite3">
+								<img
+									src="img/plastikflaske.svg"
+									alt="plastikflaske"
+								/>
+							</div>
+						</div>
+						<div id="game_foreground">
+							<div id="forgrund_container">
+								<div id="forgrund_sprite">
+									<img src="img/Forgrund.svg" alt="" />
+								</div>
+							</div>
+						</div>
+						<div id="game_ui">
+							<div id="life_board">
+								<h4></h4>
+								<img src="img/hjerte.svg" alt="Liv" />
+							</div>
+							<div id="score_board">
+								<h4></h4>
+								<img src="img/stjerne_point.svg" alt="Point" />
+							</div>
+							<div id="time_board">
+								<div id="time_sprite" class="tid"></div>
+							</div>
+						</div>
+					</div>
+					<div id="start" class="hide">
+						<div id="start_knap1">
+							<img src="img/spil_knap.svg" alt="Spil Knap" />
+						</div>
+						<div id="info_knap">
+							<img
+								src="img/stjerne_indstillinger.svg"
+								alt="Info Knap"
+							/>
+						</div>
+					</div>
+					<div id="info_screen" class="hide">
+						<img src="img/regler.svg" alt="Regler" />
+						<div id="start_knap2">
+							<img src="img/spil_knap.svg" alt="Spil Knap" />
+						</div>
+					</div>
+					<div id="game_over" class="hide">
+						<div id="game_over_points">Du fik ?? points</div>
+						<div id="start_igen1">
+							<img src="img/spil_igen.svg" alt="Spil Igen" />
+						</div>
+					</div>
+					<div id="level_complete" class="hide">
+						<div id="level_complete_points">Du fik ?? points</div>
+						<div id="start_igen2">
+							<img src="img/spil_igen.svg" alt="Spil Igen" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<audio src="sound/ov.mp3" id="sound_ov"></audio>
+		<audio src="sound/jubi.mp3" id="sound_jubi"></audio>
+		<script src="script.js"></script>
+	</body>
+</html>
